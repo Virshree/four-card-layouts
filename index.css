@@ -1,0 +1,129 @@
+@import url('https://fonts.google.com/specimen/Poppins');
+
+:root{
+    --red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+
+--Very-Dark-Blue: hsl(234, 12%, 34%);
+--Grayish-Blue: hsl(229, 6%, 66%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    margin-top: 10vh;
+    background-color:  var(--Very-Light-Gray);
+}
+
+
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 7vh;
+        margin-bottom: 30px;
+        gap: 20px;
+        
+
+    }
+    
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:5px;
+    }
+    .heading{
+        display: flex;
+        flex-direction: column;
+        font-size: 32px;
+        
+        
+    }
+  
+    .paragraph{
+      color: var(--Grayish-Blue);
+      line-height: 25px;
+      text-align: center;
+      width: 480px;
+    }
+    article{
+
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 5px;
+        padding: 25px;
+        height: 35vh;
+        width: 25vw;
+        
+    }
+    .image-container{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 12vh;
+         
+    
+    }
+    .text-container{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .second{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+    p{
+        color: var(--Grayish-Blue);
+    }
+
+    .first{
+        border-top: 4px solid var(--Cyan);
+    }
+    .second-1{
+        border-top: 4px solid var(--red);
+    }
+    .second-2{
+        border-top: 4px solid var(--Orange);
+    }
+    .third{
+        border-top: 4px solid var(--Blue);
+        }
+    
+@media screen and (max-width:768px){
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top:2vh;
+        gap: 20px;
+
+    }
+    article{
+        width: 70vw;
+        height: 27vh;
+    }
+    .image-container{
+        margin-top: 1vh;
+    }
+    
+    
+
+}
